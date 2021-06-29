@@ -348,7 +348,7 @@ public class chatActivity extends AppCompatActivity {
                             .child("chats")
                             .child(calendar.getTimeInMillis() + "");
                     dialog.show();
-                    // uplading the file
+                    // uploading the file
                     reference.putFile(selectedImage).addOnCompleteListener(new OnCompleteListener<UploadTask.TaskSnapshot>() {
                         @Override
                         public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
