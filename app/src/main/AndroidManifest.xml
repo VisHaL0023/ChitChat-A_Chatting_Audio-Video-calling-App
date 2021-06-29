@@ -29,7 +29,6 @@
         </activity>
         <activity android:name=".Activities.IncommingInvitationActivity"
             android:screenOrientation="portrait"/>
-        <activity android:name=".Activities.CallActivity" />
         <activity android:name=".Activities.splashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
