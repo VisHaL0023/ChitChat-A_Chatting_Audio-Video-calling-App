@@ -124,7 +124,6 @@ public class chatActivity extends AppCompatActivity {
         binding.recyclerViewChat.setAdapter(adapter);
 
 
-
         String name = getIntent().getStringExtra("name");
         // For getting the Profile Image for toolBar
         String profilePic = getIntent().getStringExtra("image");
@@ -146,7 +145,7 @@ public class chatActivity extends AppCompatActivity {
                             message.setMessageId(snapshot1.getKey());
                             messages.add(message);
                         }
-                      binding.recyclerViewChat.scrollToPosition(binding.recyclerViewChat.getAdapter().getItemCount()-1);
+                        binding.recyclerViewChat.scrollToPosition(binding.recyclerViewChat.getAdapter().getItemCount() - 1);
                         adapter.notifyDataSetChanged();
                     }
 
