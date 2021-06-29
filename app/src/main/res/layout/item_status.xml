@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/image_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="5dp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/lastStatusimage"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:padding="6dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <com.devlomi.circularstatusview.CircularStatusView
+        android:id="@+id/circular_status_view"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:portion_color="@color/white"
+        app:portion_spacing="3dp"
+        app:portion_width="2dp"
+        app:portions_count="8" />
+
+    <TextView
+        android:id="@+id/statusUplodedUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/circular_status_view"
+        android:gravity="center"
+        android:padding="4dp"
+        android:text="Rahul Yadav"
+        android:textColor="@color/white"
+        android:textSize="10dp" />
+
+</RelativeLayout>
+

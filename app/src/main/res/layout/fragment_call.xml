@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="20dp"
+    android:layout_marginTop="10dp"
+    android:elevation="15dp">
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CallActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/purple_light"
+        android:text="Calls"
+        android:padding="4dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/callheadline"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/text_outline"
+        android:textStyle="bold"
+        android:textSize="13dp" />
+    <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+        android:id="@+id/callRecyclerView"
+        android:layout_marginTop="35dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:shimmer_demo_angle="20"
+        app:shimmer_demo_child_count="10"
+        app:shimmer_demo_grid_child_count="2"
+        app:shimmer_demo_layout="@layout/demo_layout"
+        app:shimmer_demo_layout_manager_type="linear_vertical">
+
+    </com.cooltechworks.views.shimmer.ShimmerRecyclerView>
+
+</RelativeLayout>
+</androidx.cardview.widget.CardView>

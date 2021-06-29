@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/chats"
+        android:icon="@drawable/outline_chat_24"
+        android:title="Chats">
+
+    </item>
+    <item
+        android:id="@+id/status"
+        android:icon="@drawable/outline_add_a_photo_24"
+        android:title="Status" />
+    <item
+        android:id="@+id/calls"
+        android:icon="@drawable/outline_call_24"
+        android:title="Calls" />
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/outline_account_circle_24"
+        android:title="Profile" />
+
+</menu>
