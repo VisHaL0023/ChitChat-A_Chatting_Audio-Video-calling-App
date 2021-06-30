@@ -10,7 +10,7 @@
 This Project is currently in development As I am Adding More features and also Finding and Solving the Bugs.
 
 ## **Project Screen Shot(s)**
-<img align="left" width="100" height="100" src="https://i.postimg.cc/j2RpPmfZ/Screenshot-20210629-203555.png">
+<img align="left" width="600" height="600" src="https://i.postimg.cc/j2RpPmfZ/Screenshot-20210629-203555.png">
 <img align="left" width="100" height="100" src="https://i.postimg.cc/4dggJBJb/Screenshot-20210630-182319.png">
 <img align="left" width="100" height="100" src="https://i.postimg.cc/x8pqZWK1/Screenshot-20210630-181144.png">
 <img align="left" width="100" height="100" src="https://i.postimg.cc/xTsdTDNf/Screenshot-20210630-175447.png">
