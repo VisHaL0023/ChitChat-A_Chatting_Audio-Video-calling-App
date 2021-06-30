@@ -15,7 +15,7 @@ This Project is currently in development As I am Adding More features and also F
     <a target="_blank"> <img src="https://i.postimg.cc/4dggJBJb/Screenshot-20210630-182319.png"  /> 
     <a target="_blank"> <img src="https://i.postimg.cc/x8pqZWK1/Screenshot-20210630-181144.png" /> 
     <a target="_blank"> <img src="https://i.postimg.cc/xTsdTDNf/Screenshot-20210630-175447.png"  />  
-    <a  target="_blank"> <img src="https://i.postimg.cc/hP89CGYC/Screenshot-20210630-175741.png"  />  
+  
 </p>
 
 
