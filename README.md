@@ -1,8 +1,8 @@
 # **ChitChat - A Chatting Audio/Video Calling App**
 
-- Hey There 🙋‍♂️ This Application is Built using JAVA on Android Studio which is capable of Realtime chatting Audio/Video 📱 call with the other person using the same App. 
+- Hey There 🙋‍♂️ This Project is Built using JAVA on Android Studio which is capable of Realtime chatting Audio/Video 📱 call with the other person using the same App. 
 
-- User can Also Upload Image Status to the App which can be seen my Other Users in Realtime. There is Typing Online/Offline and Sent/Seen status Indication also in chat.User can also send image as Attachment in chat.
+- User can Also Upload Image Status 📷 to the App which can be seen my Other Users in Realtime. There is Typing Online/Offline and Sent/Seen status Indication also in chat.User can also send image as Attachment in chat.
 
 - Various Technologies and Libraries such as `Firebase, Retrofit, Glide, JitsiMeet, Shimmer RecyclerView, Cloud Messaging, Firebase Database` etc are used in this Application.
 
@@ -21,7 +21,6 @@ This Project is currently in development As I am Adding More features and also F
 
 
 
-
 ## **Installation** 
 
 We can Simply Downlode it. I will Provide the Link Soon.
@@ -34,4 +33,4 @@ Originally I wanted to build an application that allowed users to chat with each
 
 One of the main challenges I ran into was showing the call screen when user call. This lead me to spend a few days on a research spike into retrofit library and Firebase Cloud Messaging.
 
-Thank You for Reading and Visiting, Have A Nice Day!
+Thank You for Reading and Visiting, Have A Nice Day!💚💙
