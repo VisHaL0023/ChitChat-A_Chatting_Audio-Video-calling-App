@@ -29,24 +29,18 @@ public class PhoneNumberActivity extends AppCompatActivity {
         binding.phoneBox.setSelection(3);
 
         auth = FirebaseAuth.getInstance();
-        //This is to keep you SignIn One logged In even When App is Closed until you logout
-        if (auth.getCurrentUser() != null) {
-            Intent intent = new Intent(PhoneNumberActivity.this, MainActivity.class);
-            startActivity(intent);
-            finish();
-        }
 
         binding.continueBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PhoneNumberActivity.this, otpActivity.class);
                 String number = binding.phoneBox.getText().toString();
                 if(number.length() < 13)
                 {
-                    binding.phoneBox.setError("Enter a Valid Phone Number(Make Sure to Add +91 also)");
+                    binding.phoneBox.setError("Enter a Valid Phone Number(Make Sure to Add +91 code)");
                 }
                 else
                 {
+                    Intent intent = new Intent(PhoneNumberActivity.this, otpActivity.class);
                     intent.putExtra("phoneNumber", number);
                     startActivity(intent);
                 }

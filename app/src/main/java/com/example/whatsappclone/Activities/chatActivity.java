@@ -12,10 +12,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.text.Editable;
 import android.text.TextWatcher;
-import android.view.MotionEvent;
 import android.view.View;
-import android.widget.Toast;
-
 import com.bumptech.glide.Glide;
 import com.example.whatsappclone.Adapters.MessagesAdapter;
 import com.example.whatsappclone.Models.Message;
@@ -54,7 +51,7 @@ public class chatActivity extends AppCompatActivity {
     //for photos send to chat
     FirebaseStorage storage;
     ProgressDialog dialog;
-    ValueEventListener seenListner;
+    ValueEventListener seenListener;
     DatabaseReference reference;
     FirebaseUser fuser;
 
@@ -74,7 +71,8 @@ public class chatActivity extends AppCompatActivity {
 
         //for setting the ExtraTool bar in Chat
         setSupportActionBar(binding.toolbar);
-        //for hiding the Name of app on TOolbar
+
+        //for hiding the Name of app on Toolbar
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
         dialog = new ProgressDialog(this);
@@ -272,7 +270,7 @@ public class chatActivity extends AppCompatActivity {
         reference = FirebaseDatabase.getInstance().getReference().child("chats")
                 .child(senderRoom)
                 .child("messages");
-        seenListner = reference.addValueEventListener(new ValueEventListener() {
+        seenListener = reference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull @NotNull DataSnapshot snapshot) {
                 for (DataSnapshot snapshot2 : snapshot.getChildren()) {
@@ -313,7 +311,7 @@ public class chatActivity extends AppCompatActivity {
         });
     }
 
-    //FOr showing Online and Stroing in Database
+    //For showing Online and Storing in Database
     @Override
     protected void onResume() {
         super.onResume();
@@ -327,7 +325,7 @@ public class chatActivity extends AppCompatActivity {
         super.onPause();
         String currentId = FirebaseAuth.getInstance().getUid();
         database.getReference().child("presence").child(currentId).setValue("Offline");
-        reference.removeEventListener(seenListner);
+        reference.removeEventListener(seenListener);
     }
 
     //for image sent in Chats

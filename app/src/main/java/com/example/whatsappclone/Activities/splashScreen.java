@@ -4,18 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.Window;
 import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.TextView;
-
-import com.airbnb.lottie.LottieAnimationView;
 import com.example.whatsappclone.R;
 import com.example.whatsappclone.databinding.ActivitySplashScreenBinding;
 import com.google.firebase.auth.FirebaseAuth;
-
-import static java.lang.Thread.sleep;
 
 public class splashScreen extends AppCompatActivity {
 

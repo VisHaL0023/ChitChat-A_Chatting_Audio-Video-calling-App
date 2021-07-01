@@ -3,25 +3,19 @@ package com.example.whatsappclone.Activities;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.animation.AnimationUtils;
-import android.view.animation.LayoutAnimationController;
 import android.widget.LinearLayout;
 import android.widget.Toast;
-import android.widget.Toolbar;
 
 import com.example.whatsappclone.Adapters.topStatusAdapter;
 import com.example.whatsappclone.Fragments.callFragment;
@@ -30,7 +24,6 @@ import com.example.whatsappclone.Models.Status;
 import com.example.whatsappclone.Models.UserStatus;
 import com.example.whatsappclone.R;
 import com.example.whatsappclone.Models.Users;
-import com.example.whatsappclone.Adapters.UsersAdapter;
 import com.example.whatsappclone.databinding.ActivityMainBinding;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -62,7 +55,6 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<UserStatus> userStatuses;
     ProgressDialog dialog;
     Users user;
-    LinearLayout linearLayout;
 
     //for saving state of frag
     Fragment activeFrag;
@@ -75,13 +67,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
-        linearLayout = findViewById(R.id.activitymainLinearLayout);
 
 
       //for preventing again again reloading of frags
-        fragmentManager.beginTransaction().add(R.id.activitymainLinearLayout, chatFragment, "2").commit();
+        fragmentManager.beginTransaction().add(binding.activitymainLinearLayout.getId(), chatFragment).commit();
         activeFrag = chatFragment;
-        fragmentManager.beginTransaction().add(R.id.activitymainLinearLayout, callFragment, "1").hide(callFragment).commit();
+        fragmentManager.beginTransaction().add(binding.activitymainLinearLayout.getId(), callFragment).hide(callFragment).commit();
 
 
         currentId = FirebaseAuth.getInstance().getUid();
@@ -93,10 +84,9 @@ public class MainActivity extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
 
         userStatuses = new ArrayList<>();
-
         statusAdapter = new topStatusAdapter(this, userStatuses);
 
-        //Getting Users Data from Firebase (for status Purpose information of the person uplading status)(khudki id info) we will load it and use it later
+        //Getting Users Data from Firebase (for status Purpose information of the person uploading status)(OWN id info) we will load it and use it later
         database.getReference().child("users").child(FirebaseAuth.getInstance().getUid())
                 .addValueEventListener(new ValueEventListener() {
                     @Override
@@ -188,6 +178,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //For Firebase cloud Messaging Token Generation
         FirebaseMessaging.getInstance().getToken()
                 .addOnCompleteListener(new OnCompleteListener<String>() {
                     @Override
