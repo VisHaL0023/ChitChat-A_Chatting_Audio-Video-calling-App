@@ -1,5 +1,7 @@
 # **ChitChat - A Chatting Audio/Video Calling App**
 
+https://img.shields.io/badge/ChitChat-v1.0-orange
+
 - Hey There 🙋‍♂️ This Project is Built using JAVA on Android Studio which is capable of Realtime chatting Audio/Video 📱 call with the other person using the same App. 
 
 - User can Also Upload Image Status 📷 to the App which can be seen my Other Users in Realtime. There is Typing Online/Offline and Sent/Seen status Indication also in chat.User can also send image as Attachment in chat.
