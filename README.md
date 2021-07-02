@@ -13,8 +13,8 @@ This Project is currently in development As I am Adding More features and also F
 <img  align = "left" width="300" height="600" src="https://i.postimg.cc/j2RpPmfZ/Screenshot-20210629-203555.png">
 <img  align = "left" width="300" height="600" src="https://i.postimg.cc/4dggJBJb/Screenshot-20210630-182319.png">
 <img  align = "left" width="300" height="600" src="https://i.postimg.cc/x8pqZWK1/Screenshot-20210630-181144.png">
+<img  align = "left" width="300" height="600" src="">
 <img  align = "left" width="300" height="600" src="https://i.postimg.cc/6QhnM87B/Inked68747470733a2f2f692e706f7374696d672e63632f68503839434759432f53637265656e73686f742d3230323130363.jpg">
-<img  align = "left" width="300" height="600" src="https://i.postimg.cc/hP89CGYC/Screenshot-20210630-175741.png">
 <img   width="300" height="600" src="https://i.postimg.cc/kgbcKtRD/Screenshot-20210630-195929.png">
 
 
