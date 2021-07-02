@@ -1,6 +1,4 @@
 # **ChitChat - A Chatting Audio/Video Calling App**
-<img   width="300" height="600" src="
-https://img.shields.io/badge/ChitChat-v1.0-orange">
 
 
 - Hey There 🙋‍♂️ This Project is Built using JAVA on Android Studio which is capable of Realtime chatting Audio/Video 📱 call with the other person using the same App. 
